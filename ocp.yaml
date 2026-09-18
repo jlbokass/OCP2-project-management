@@ -1,0 +1,25 @@
+schema_version: 1
+project:
+  code: OCP2
+  name: EtuBibliotheque
+  platform: openclassrooms
+repositories:
+- id: backend
+  path: backend
+  role: backend
+  remote: https://github.com/jlbokass/OCP2-Back-end-java.git
+  upstream: https://github.com/OpenClassrooms-Student-Center/Back-end---Testez-et-am-liorez-une-application-existante.git
+  default_branch: main
+- id: frontend
+  path: frontend
+  role: frontend
+  remote: https://github.com/jlbokass/OCP2-Front-end-angular.git
+  upstream: https://github.com/OpenClassrooms-Student-Center/Front-end---Testez-et-am-liorez-une-application-existante.git
+  default_branch: main
+- id: management
+  path: management
+  role: management
+  remote: https://github.com/jlbokass/OCP2-project-management.git
+  default_branch: main
+workspace:
+  control_repository: management
